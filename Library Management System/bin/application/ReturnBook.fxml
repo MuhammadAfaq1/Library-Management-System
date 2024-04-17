@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="578.0" fitWidth="777.0" layoutX="-22.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icon%201/123456.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="83.0" text="Book ID">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="123.0" text="Name">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="168.0" text="Publisher">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="214.0" text="Price">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="255.0" text="Publish Year">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="returnBookIdTf" layoutX="253.0" layoutY="79.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField fx:id="returnnameTf" layoutX="253.0" layoutY="119.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField fx:id="returnpublisherTf" layoutX="253.0" layoutY="162.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField fx:id="returnyearTf" layoutX="253.0" layoutY="249.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField fx:id="returnpriceTf" layoutX="253.0" layoutY="208.0" prefHeight="26.0" prefWidth="250.0" />
+      <Button fx:id="ReturnBookButton" layoutX="160.0" layoutY="377.0" mnemonicParsing="false" onAction="#returnBook" text="Return">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/return%20book%20png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backReturnBookButton" layoutX="427.0" layoutY="377.0" mnemonicParsing="false" onAction="#backtoAdminHome2" text="Back">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label fx:id="displayBooksLabel" alignment="TOP_LEFT" layoutX="35.0" layoutY="195.0" prefHeight="476.0" prefWidth="534.0">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="746.0" fitWidth="1192.0" layoutX="-24.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icon%201/123456.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="allBooksButton" layoutX="501.0" layoutY="653.0" mnemonicParsing="false" onAction="#DisplayBooks" text="Display All Books">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/Library_Book_532388_1366x768.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="130.0" layoutY="50.0" text="Search by">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="92.0" text="or">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchByBookIdTf" layoutX="201.0" layoutY="46.0" prefHeight="26.0" prefWidth="222.0">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="searchByBookNameTf" layoutX="201.0" layoutY="124.0" prefHeight="26.0" prefWidth="222.0" promptText="Book Name">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="TOP_LEFT" layoutX="35.0" layoutY="168.0" prefHeight="27.0" prefWidth="106.0" text="Books List:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchCloseButton" layoutX="14.0" layoutY="651.0" mnemonicParsing="false" onAction="#backtoAdminHome2" text="Back">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="searchBookButton" layoutX="477.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchBook" text="Search">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

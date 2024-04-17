@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="623.0" fitWidth="794.0" layoutX="-30.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icon%201/Library_Book_532388_1366x768.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="searchButton" layoutX="36.0" layoutY="141.0" mnemonicParsing="false" onAction="#search" text="Search for Book">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="requestButton" layoutX="229.0" layoutY="141.0" mnemonicParsing="false" onAction="#requestBook" text="Request a Book">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/return-book-1-560407.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="returnBookButtton" layoutX="429.0" layoutY="141.0" mnemonicParsing="false" onAction="#bookReturn" text="Return a Book">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/return%20book%20png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="studentLogoutButton" layoutX="490.0" layoutY="346.0" mnemonicParsing="false" onAction="#close" text="Logout">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icon%201/red-x-mark-transparent-background-3.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="177.0" layoutY="40.0" text="Student Home Page" textFill="#fffbfb">
+         <font>
+            <Font name="Bell MT" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
